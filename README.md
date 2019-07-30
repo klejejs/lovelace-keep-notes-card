@@ -4,7 +4,7 @@ A Lovelace custom card for [custom component Keep Notes sensor](https://github.c
 For installation see [this guide](https://github.com/thomasloven/hass-config/wiki/Lovelace-Plugins).
 
 
-**This card reqires [card tools](https://github.com/thomasloven/lovelace-card-tools).**
+**This card requires [card tools](https://github.com/thomasloven/lovelace-card-tools).**
 
 
 
