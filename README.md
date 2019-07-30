@@ -30,4 +30,4 @@ views:
 | ---- | ---- | ------- | -----------
 | type | string | **Required** | `custom:keep-notes-card`
 | entity | string | **Required** | The entity id of Keep Notes sensor. Always `sensor.keep_notes_sensor`
-| title | string | `Title of the note` | The title of the card.
+| title | string | `Title of the note from sensor` | The title of the card.
