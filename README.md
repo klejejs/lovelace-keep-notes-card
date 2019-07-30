@@ -8,6 +8,9 @@ For installation see [this guide](https://github.com/thomasloven/hass-config/wik
 
 
 
+This card is only visual and you can not interact with it.
+
+
 ## Example configuration
 
 
