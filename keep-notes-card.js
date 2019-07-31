@@ -33,7 +33,7 @@ customElements.whenDefined('card-tools').then(() => {
                                                 <div class="icon">
                                                     ${note['checked'] == true ? cardTools.LitHtml ` <ha-icon icon="mdi:checkbox-marked-outline"></ha-icon> ` : cardTools.LitHtml ` <ha-icon icon="mdi:checkbox-blank-outline"></ha-icon> `}
                                                 </div>
-                                                <div class="note checked">
+                                                <div class="note">
                                                     ${note['text']}
                                                 </div>
                                             </div>
@@ -50,7 +50,7 @@ customElements.whenDefined('card-tools').then(() => {
                                                 <div class="icon">
                                                     ${note['checked'] == true ? cardTools.LitHtml ` <ha-icon icon="mdi:checkbox-marked-outline"></ha-icon> ` : cardTools.LitHtml ` <ha-icon icon="mdi:checkbox-blank-outline"></ha-icon> `}
                                                 </div>
-                                                <div class="note">
+                                                <div class="note checked">
                                                     ${note['text']}
                                                 </div>
                                             </div>
