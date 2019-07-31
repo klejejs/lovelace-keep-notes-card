@@ -29,7 +29,7 @@ customElements.whenDefined('card-tools').then(() => {
                                 ${this.unchecked.map(note =>
                                     cardTools.LitHtml `
                                         <div class="body flex">
-                                            <div>
+                                            <div class="horizontal-flex">
                                                 <div class="icon">
                                                     ${note['checked'] == true ? cardTools.LitHtml ` <ha-icon icon="mdi:checkbox-marked-outline"></ha-icon> ` : cardTools.LitHtml ` <ha-icon icon="mdi:checkbox-blank-outline"></ha-icon> `}
                                                 </div>
@@ -46,7 +46,7 @@ customElements.whenDefined('card-tools').then(() => {
                                 ${this.checked.map(note =>
                                     cardTools.LitHtml `
                                         <div class="body flex">
-                                            <div>
+                                            <div class="horizontal-flex">
                                                 <div class="icon">
                                                     ${note['checked'] == true ? cardTools.LitHtml ` <ha-icon icon="mdi:checkbox-marked-outline"></ha-icon> ` : cardTools.LitHtml ` <ha-icon icon="mdi:checkbox-blank-outline"></ha-icon> `}
                                                 </div>
@@ -103,6 +103,9 @@ customElements.whenDefined('card-tools').then(() => {
                     }
                     .checked {
                         text-decoration: line-through;
+                    }
+                    .horizontal-flex {
+                        display: flex
                     }
                 </style>
             `;
