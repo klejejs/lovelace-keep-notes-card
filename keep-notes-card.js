@@ -25,7 +25,7 @@ customElements.whenDefined('card-tools').then(() => {
                         </div>
                         
                         <div>
-                            ${this.unchecked.length > 0 ? cardTools.LitHtml `
+                            ${((this.unchecked.length > 0) && (this.showUnchecked == true)) ? cardTools.LitHtml `
                                 ${this.unchecked.map(note =>
                                     cardTools.LitHtml `
                                         <div class="body flex">
@@ -41,8 +41,8 @@ customElements.whenDefined('card-tools').then(() => {
                                     `
                                 )} ` : ''
                             }
-                            ${(this.unchecked.length > 0) && (this.checked.length > 0) ? cardTools.LitHtml ` <hr> ` : ''} 
-                            ${this.checked.length > 0 ? cardTools.LitHtml `
+                            ${((this.unchecked.length > 0) && (this.checked.length > 0) && (this.showChecked == true) && (this.showUnchecked == true)) ? cardTools.LitHtml ` <hr> ` : ''} 
+                            ${((this.checked.length > 0) && (this.showChecked == true)) ? cardTools.LitHtml `
                                 ${this.checked.map(note =>
                                     cardTools.LitHtml `
                                         <div class="body flex">
@@ -116,6 +116,9 @@ customElements.whenDefined('card-tools').then(() => {
             
             const entity = hass.states[this.config.entity];
             this.cardTitle = this.config.title == null ? entity.attributes['notes']['name'] : this.config.title;
+
+            this.showChecked = this.config.showChecked == null ? true : this.config.showChecked;
+            this.showUnchecked = this.config.showUnchecked == null ? true : this.config.showUnchecked;
             
             this.notes = entity.attributes['notes']['data'];
             
