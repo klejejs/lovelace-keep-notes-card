@@ -1,3 +1,7 @@
+# Due to other similar Home Assistant integrations being maintained, this repository has been archived.
+
+---
+
 # keep-notes-card
 A Lovelace custom card for [custom component Keep Notes sensor](https://github.com/klejejs/ha_keep_notes_sensor) in Home Assistant. 
 This card is only visual and you can not interact with it.
